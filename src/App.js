@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          commiting to github 
+          commiting to github trying again...
         </a>
       </header>
     </div>
