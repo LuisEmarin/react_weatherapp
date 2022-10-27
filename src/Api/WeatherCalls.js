@@ -19,7 +19,8 @@ const getWeatherData = async (infoType, searchParams) => {
 
 const formatCurrentWeather = (data) => {
     const {
-        coor: {lat, lon},
+        coord: {lat, lon},
+        // It was supposed to be coord not coor. 
         main: {temp, feels_like, temp_min, temp_max, humidity},
         name,
         dt,
@@ -30,7 +31,7 @@ const formatCurrentWeather = (data) => {
 
     const {main: details, icon} = weather[0];
 
-    console.log(data)
+    console.log(weather)
 
     return {lat, lon, temp, feels_like, temp_min, temp_max, humidity, name, dt, country, sunrise, sunset, details, icon, speed};
 };
